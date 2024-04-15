@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website Title</title>
+    <style type="text/css">
+        /* Your existing styles (including navbar styles) go here */
+
+        /* Add any additional styles specific to this page */
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+
+        #main-content {
+            /* Customize the styling for the main content area */
+            padding: 20px;
+            background-color: #ffffff;
+            color: black;
+            border-radius: 10px;
+            margin-left: 20%;
+        }
+
+        #navbar {
+            float: left;
+            width: 200px;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+        }
+
+        #navbar a:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Your code inside the document.ready function
+            $("#button").on("click", function () {
+                // Add your button click logic here
+            });
+        }); // document.ready
+    </script>
+</head>
+<body>
+    <!-- Add the navbar -->
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="step1.html">step 1</a>
+        <a href="step2.html">step 2</a>
+        <a href="step3.html">step 3</a>
+        <a href="example.html">example</a>
+        <a href="help.html">Videos</a>
+    </div>
+    <!-- Add the main content -->
+    <div id="main-content">
+        <!-- Your page-specific content goes here -->
+        <h1>Step 1</h1>
+        <p>
+            Here is a video that can help you to learn the basics of robo flow. You will only need to watch until 10 minutes; everything beyond that is not covered in this project.
+        </p>
+        <iframe width="420" height="315"
+src="https://www.youtube.com/embed/O-ZPxTpb2Yg">
+</iframe>
+<p>
+    Here is another helpful video that will help you go beyond this project and use object detection in future research by starting with google datasets.    
+
+</p>
+<iframe width="420" height="315"
+src="https://www.youtube.com/embed/-eZaE8xbt0A">
+</iframe>
+    </div>
+</body>
+</html>

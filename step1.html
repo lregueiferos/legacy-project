@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website Title</title>
+    <style type="text/css">
+        /* Your existing styles (including navbar styles) go here */
+
+        /* Add any additional styles specific to this page */
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+
+        #main-content {
+            /* Customize the styling for the main content area */
+            padding: 20px;
+            background-color: #ffffff;
+            color: black;
+            border-radius: 10px;
+            margin-left: 20%;
+        }
+
+        #navbar {
+            float: left;
+            width: 200px;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+        }
+
+        #navbar a:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Your code inside the document.ready function
+            $("#button").on("click", function () {
+                // Add your button click logic here
+            });
+        }); // document.ready
+    </script>
+</head>
+<body>
+    <!-- Add the navbar -->
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="step1.html">step 1</a>
+        <a href="step2.html">step 2</a>
+        <a href="step3.html">step 3</a>
+        <a href="example.html">example</a>
+        <a href="help.html">Videos</a>
+    </div>
+    <!-- Add the main content -->
+    <div id="main-content">
+        <!-- Your page-specific content goes here -->
+        <h1>Step 1</h1>
+        <p>
+            The first step is to find images for the object detection model. For this we will be using google dataset search. This tool will allow you to find images for identification of many different objects. For this example let's use dogs and cats. Some datasets that you might want to use are the stanford dog dataset and the oxford pet dataset for cats. I would recommend using 1000 pictures for each dog and cat as it will allow the images to be nicely spread between the train, validate and test datasets. In the next step you will be marking the images and applying transformations. Refer to step 2 for the next part of the lesson. 
+        </p>
+    </div>
+</body>
+</html>

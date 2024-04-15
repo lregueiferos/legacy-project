@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website Title</title>
+    <style type="text/css">
+        /* Your existing styles (including navbar styles) go here */
+
+        /* Add any additional styles specific to this page */
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+
+        #main-content {
+            /* Customize the styling for the main content area */
+            padding: 20px;
+            background-color: #ffffff;
+            color: black;
+            border-radius: 10px;
+            margin-left: 20%;
+        }
+
+        #navbar {
+            float: left;
+            width: 200px;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+        }
+
+        #navbar a:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Your code inside the document.ready function
+            $("#button").on("click", function () {
+                // Add your button click logic here
+            });
+        }); // document.ready
+    </script>
+</head>
+<body>
+    <!-- Add the navbar -->
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="step1.html">step 1</a>
+        <a href="step2.html">step 2</a>
+        <a href="step3.html">step 3</a>
+        <a href="example.html">example</a>
+        <a href="help.html">Videos</a>
+    </div>
+
+    <!-- Add the main content -->
+    <div id="main-content">
+        <!-- Your page-specific content goes here -->
+        <h1>Step 3</h1>
+        <p>
+            Once you have completed step 1 and 2 you can now start the generation of the model. To do this you will first need to apply transformations to the images. I would recommend you apply a grayscale filter and a crop filter to make the model more effective and achieve better results. And for augmentations I would recommend a blur, cutout and flip augmentation. These will give you good results for most types of images but you may need to adjust these if you are using images that need to identify small details in the images. For such use cases use no augmentations and a high resolution image for the dataset. Then you can start the creation of the model. This may take up to a day so start this as soon as possible and monitor it as it may fail and need to be redone. Now if you would like to see an example of expected  results of the training then go to the example section of the site.
+
+        </p>
+    </div>
+</body>
+</html>

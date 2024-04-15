@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Website Title</title>
+    <style type="text/css">
+        /* Your existing styles (including navbar styles) go here */
+
+        /* Add any additional styles specific to this page */
+        body {
+            background-color: #1a1a1a; /* Dark background color */
+            color: #ffffff; /* Light text color */
+            font-family: Arial, sans-serif;
+        }
+
+        #main-content {
+            /* Customize the styling for the main content area */
+            padding: 20px;
+            background-color: #ffffff;
+            color: black;
+            border-radius: 10px;
+            margin-left: 20%;
+        }
+
+        #navbar {
+            float: left;
+            width: 200px;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        #navbar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 8px;
+        }
+
+        #navbar a:hover {
+            background-color: #555;
+        }
+    </style>
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Your code inside the document.ready function
+            $("#button").on("click", function () {
+                // Add your button click logic here
+            });
+        }); // document.ready
+    </script>
+</head>
+<body>
+    <!-- Add the navbar -->
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="step1.html">step 1</a>
+        <a href="step2.html">step 2</a>
+        <a href="step3.html">step 3</a>
+        <a href="example.html">example</a>
+        <a href="help.html">Videos</a>
+    </div>
+
+    <!-- Add the main content -->
+    <div id="main-content">
+        <!-- Your page-specific content goes here -->
+        <h1>Step 2</h1>
+        <p>
+            This step will show you how to mark up your dataset and apply transformations. First you will need to put your images into 2 folders to upload to roboflow. To upload you will go to the project that you have created and click upload data this will allow you to select the folders with the images to mark up. I recommend doing this one at a time as to not mix up the images during the process of marking up the images. How well you mark up the images will be shown in the accuracy of the model. Once uploaded you will click annotation for the sake of this project you will be manually annotating but this would generally be done by a team of individuals. Now click manual annotation and click start annotation. Now you will create a box around the dog or cat whichever you are doing and label it as such in the text box. Then repeat this step for all dog images and cat images. After you are done you will now go to step 3.    
+        </p>
+    </div>
+</body>
+</html>
